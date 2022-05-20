@@ -1,0 +1,78 @@
+:root{
+    --LightGrey: hsl(217, 12%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --font: 'Overpass', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+
+body{
+    background-color: hsl(216, 12%, 8%);
+
+    
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--font);
+
+}
+
+#principalcard{
+
+    background-color: #1F2630;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    margin: 18vh auto;
+    justify-content: center;
+
+
+
+}
+
+h1{
+    margin-bottom: 5px;
+    margin: 20px;
+    font-weight: 700;
+    color: var(--White);
+    font-size: 20px;
+}
+
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    color: var(--LightGrey);
+    font-size: 12px;
+}
+
+li{
+    list-style-type: none;
+    
+}
+
+#rate{
+    display: flex;
+    margin: 10px auto;
+}
+
+#rate li + li{
+    margin-left: 10px;
+}
+
+.rating{
+    width: 42px;
+    height: 42px;
+    border-radius: 20px;
+    background-color:#262F38;
+    border-color: transparent;
+    color: var(--LightGrey);
+}
