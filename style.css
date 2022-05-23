@@ -1,30 +1,46 @@
-:root{
+:root {
     --LightGrey: hsl(217, 12%, 63%);
     --White: hsl(0, 0%, 100%);
     --Medium-Grey: hsl(216, 12%, 54%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
     --font: 'Overpass', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
-body{
+body {
     background-color: hsl(216, 12%, 8%);
-
-    
 }
 
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
     font-family: var(--font);
-
 }
 
-#principalcard{
+#bg {
+    display: flex;
+    margin-left: 20px;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: #262F38;
+    border-color: transparent;
+    color: var(--LightGrey);
+}
 
+img {
+    display: flex;
+    margin: auto;
+    width: 12px;
+    height: 12px;
+    border-color: transparent;
+}
+
+#principalcard {
     background-color: #1F2630;
     display: flex;
     flex-direction: column;
@@ -33,46 +49,87 @@ body{
     height: 320px;
     margin: 18vh auto;
     justify-content: center;
-
-
-
+    padding: 20px 10px;
 }
 
-h1{
-    margin-bottom: 5px;
-    margin: 20px;
+h1 {
+    margin: 20px 20px 15px;
     font-weight: 700;
     color: var(--White);
     font-size: 20px;
 }
 
-p{
-    margin-left: 20px;
-    margin-right: 20px;
+p {
+    margin: 0 20px;
     font-weight: 400;
     color: var(--LightGrey);
-    font-size: 12px;
+    font-size: 15px;
 }
 
-li{
+li {
     list-style-type: none;
-    
 }
 
-#rate{
+#rate {
     display: flex;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
-#rate li + li{
-    margin-left: 10px;
+#rate li+li {
+    margin-left: 20px;
 }
 
-.rating{
-    width: 42px;
-    height: 42px;
+.rating {
+
+    width: 35px;
+    height: 35px;
     border-radius: 20px;
-    background-color:#262F38;
+    background-color: #262F38;
     border-color: transparent;
     color: var(--LightGrey);
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.rating:hover {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    border-color: transparent;
+    color: var(--White);
+    background-color: var(--LightGrey);
+}
+.rating.selected {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+
+#sub {
+    width: 250px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    border-color: transparent;
+    font-family: var(--font);
+    color: white;
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+#sub:hover{
+    background-color: var(--White);
+    color: var(--Orange)
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    color: var(--White);
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
