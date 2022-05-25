@@ -99,6 +99,7 @@ li {
     color: var(--White);
     background-color: var(--LightGrey);
 }
+
 .rating.selected {
     color: var(--White);
     background-color: var(--Orange);
@@ -121,15 +122,69 @@ li {
     transition: all 0.5s;
 
 }
-#sub:hover{
+
+#sub:hover {
     background-color: var(--White);
     color: var(--Orange)
 }
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
     color: var(--White);
 }
+
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+#thankscard {
+    display: none;
+    visibility: hidden;
+}
+
+img#vectorcel {
+    display: flex;
+    width: 120px;
+    height: 80px;
+    margin-bottom: 15px;
+    
+}
+
+#principalcard #thankscard {
+    display: flex;
+    visibility: visible;
+    background-color: #1F2630;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 320px;
+    height: 320px;
+    margin: 18vh auto;
+    justify-content: center;
+    padding: 20px 10px;
+} 
+
+.enterjs{
+    font-size: 12px;
+    padding: 5px;
+    background-color: #262F38;
+    border-radius: 20px;
+    color: var(--Orange);
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+#tks{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+#pgth{
+    text-align: center;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 15px;
 }
